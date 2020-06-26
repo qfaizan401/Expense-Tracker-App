@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header,Balance,IncomeExpense } from "./components";
+import { Header,Balance,IncomeExpense,TransectionList } from "./components";
 import './App.css';
 
 function App() {
@@ -9,6 +9,7 @@ function App() {
       <div className='container'>
         <Balance />
         <IncomeExpense />
+        <TransectionList />
       </div>
     </div>
   );
