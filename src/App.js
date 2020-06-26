@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header,Balance,IncomeExpense,TransectionList } from "./components";
+import { Header,Balance,IncomeExpense,TransectionList,AddTransection } from "./components";
 import './App.css';
 
 function App() {
@@ -10,6 +10,7 @@ function App() {
         <Balance />
         <IncomeExpense />
         <TransectionList />
+        <AddTransection />
       </div>
     </div>
   );
