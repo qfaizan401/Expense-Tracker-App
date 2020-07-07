@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 
 const AddTransection = () => {
-    const [Description, setDescription] = useState()
-    const [Amount, setAmount] = useState()
+    const [Description, setDescription] = useState('')
+    const [Amount, setAmount] = useState(0)
     return(
         <div>
             <h3>Add new transaction</h3>
