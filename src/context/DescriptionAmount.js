@@ -1,6 +1,7 @@
 //Gobal State
 
 import React, { createContext,useReducer } from 'react'
+import AppReducer from './AppReducer'
 
 // Create Initial State
 const initialState = {
@@ -16,6 +17,7 @@ const initialState = {
 export const DescriptionAmountContext = createContext(initialState)
 
 export const GlobalProvider = ( children ) => {
+    const [state, dispatch] = useReducer(AppReducer, initialState)
 
     return(
         <GlobalProvider value={
