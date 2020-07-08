@@ -1,5 +1,8 @@
-import React, { createContext } from 'react'
+//Gobal State
 
+import React, { createContext,useReducer } from 'react'
+
+// Create Initial State
 const initialState = {
     transection: [
         { id: 1, text: 'Flower', amount: -20 },
@@ -9,4 +12,18 @@ const initialState = {
     ]
 }
 
+// Create Global Context
 export const DescriptionAmountContext = createContext(initialState)
+
+export const GlobalProvider = ( children ) => {
+
+    return(
+        <GlobalProvider value={
+            {
+                transection: state.transection
+            }
+        }>
+            { children }
+        </GlobalProvider>
+    )
+}
