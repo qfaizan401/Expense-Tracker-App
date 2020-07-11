@@ -10,7 +10,7 @@ const AddTransection = () => {
         const newTransection = {
             id: Math.floor(Math.random() * 1000000),
             Description,
-            Amount
+            Amount: +Amount
         }
         addTransection(newTransection)
     }
