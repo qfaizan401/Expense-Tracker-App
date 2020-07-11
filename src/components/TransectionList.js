@@ -1,16 +1,14 @@
 import React, { useContext } from 'react'
 import {GlobalContext} from '../context/GlobalContext'
+import Transection from './Transection'
 
 const TransectionList = () => {
-    const context = useContext(GlobalContext)
-    console.log(context)
+    const {transection} = useContext(GlobalContext)
     return(
         <div>
             <h3>History</h3>
             <ul className="list">
-                <li className="minus">
-                    Cash <span>-$400</span><button className="delete-btn">x</button>
-                </li>
+                {transection.map(transection => (<Transection key={transection.id} transection={transection}/>))}
             </ul>
         </div>
     )
