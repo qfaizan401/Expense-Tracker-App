@@ -14,18 +14,19 @@ const initialState = {
 }
 
 // Create Global Context
-export const DescriptionAmountContext = createContext(initialState)
+export const GlobalContext = createContext(initialState)
 
-export const GlobalProvider = ( children ) => {
+//Provider
+export const GlobalProvider = ( {children} ) => {
     const [state, dispatch] = useReducer(AppReducer, initialState)
 
     return(
-        <GlobalProvider value={
+        <GlobalContext.Provider value={
             {
                 transection: state.transection
             }
         }>
             { children }
-        </GlobalProvider>
+        </GlobalContext.Provider>
     )
 }
