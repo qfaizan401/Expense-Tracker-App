@@ -1,7 +1,7 @@
 import React from 'react';
 import { Header,Balance,IncomeExpense,TransectionList,AddTransection } from "./components";
 import './App.css';
-import {GlobalProvider} from './context/DescriptionAmount'
+import {GlobalProvider} from './context/GlobalContext'
 
 function App() {
   return (
