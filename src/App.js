@@ -13,7 +13,6 @@ import { GlobalProvider } from './context/GlobalState'
 const App = () => {
   return(
     <GlobalProvider>
-      <div>
       <Header />
       <div className='container'>
         <Balance />
@@ -22,7 +21,6 @@ const App = () => {
         <AddTransactions />
       </div>
       <Footer />
-      </div>
     </GlobalProvider>
   )
 }
